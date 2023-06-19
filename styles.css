@@ -1,12 +1,23 @@
-h1{
-    margin-bottom:100px;
+body{
+    background-image: url("photo-1524334228333-0f6db392f8a1.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
+h1{
+    margin-bottom:40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    font-size: 80px;
+}
+
 .play{
     display:grid;
-    width:700px;
-    height:700px;
+    width:600px;
+    height:600px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:repeat(3,1fr);
+    padding:40px;
 }
 
 .area0{
@@ -14,7 +25,7 @@ h1{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end:2;
-    border: solid black;
+    border: solid white;
     border-width: 0px 5px 5px 0px;
 }
 
@@ -23,7 +34,7 @@ h1{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end:2;
-    border: solid black;
+    border: solid white;
     border-width:0px 5px 5px 5px;
 }
 .area2{
@@ -31,7 +42,7 @@ h1{
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end:2;
-    border: solid black;
+    border: solid white;
     border-width: 0px 0px 5px 5px;
 }
 .area3{
@@ -39,7 +50,7 @@ h1{
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end:3;
-    border: solid black;
+    border: solid white;
     border-width: 5px 5px 5px 0px;
 }
 .area4{
@@ -47,14 +58,14 @@ h1{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end:3;
-    border: 5px solid black;
+    border: 5px solid white;
 }
 .area5{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end:3;
-    border: solid black;
+    border: solid white;
     border-width: 5px 0px 5px 5px;
 }
 .area6{
@@ -62,7 +73,7 @@ h1{
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end:4;
-    border: solid black;
+    border: solid white;
     border-width: 5px 5px 0px 0px;
 }
 .area7{
@@ -70,7 +81,7 @@ h1{
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end:4;
-    border: 5px solid black;
+    border: 5px solid white;
     border-width: 5px 5px 0px 5px;
 }
 
@@ -79,7 +90,7 @@ h1{
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end:4;
-    border: solid black;
+    border: solid white;
     border-width:5px 0px 0px 5px;
 }
 .grid{
@@ -90,18 +101,20 @@ h1{
 
 .grid:hover{
     z-index: 1;
-    background-color: rgba(139, 65, 207, 0.568);
+    background-color: rgba(119, 203, 202, 0.568);
 }
+
 .circle{
-    background-image:url("circle.webp");
-    background-repeat: none;
+    background-image:url("O.png");
     background-size: contain;
     z-index:2;
 }
 
+
 .cross{
-    background-image:url("thin-letter-x-black-png-7.png");
-    background-size: cover;
+    background-image:url("X.png");
+    background-size: contain;
+    background-repeat: none;
     z-index:2;
 }
 
@@ -129,4 +142,8 @@ button {
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
+  }
+
+  .anim{
+    background-image: url(https://lottiefiles.com/74694-confetti);
   }

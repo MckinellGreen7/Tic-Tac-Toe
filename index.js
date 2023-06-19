@@ -59,6 +59,12 @@ function move(key){
         }, 100);
         f = 1
     }
+    else if (c==9)
+    {
+        setTimeout(function(){
+            alert("Draw")
+        },100);
+    }
 }
 
 function winner(arr,c){
